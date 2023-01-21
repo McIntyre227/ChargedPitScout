@@ -35,19 +35,11 @@ public class Start_Page extends AppCompatActivity {
                 Data_Collection_Page_1.Blue5 = "False";
                 Data_Collection_Page_1.Blue6 = "False";
                 //Data_Collection_Page_1.BlueOther = "False";
-                data_Collection_sandstorm.UpperHub = "False";
-                data_Collection_sandstorm.LowerHub = "False";
-                data_collection_TeleOP.Terminal = "False";
-                data_collection_TeleOP.LaunchPad = "False";
-                data_collection_TeleOP.Fender = "False";
-                data_collection_TeleOP.BackTarmac = "False";
                 //data_Collection_sandstorm.HumanPlayerMultiple = "False";
 
                 //data_Collection_sandstorm.BallCountAuto = 0;
                 //data_collection_TeleOP.WrongColorYes = "False";
                 //data_collection_TeleOP.WrongColorNo = "False";
-                data_collection_TeleOP.DefenseYes = "False";
-                data_collection_TeleOP.DefenseNo = "False";
                 data_collection_end_game.TraversalCap = "False";
                 data_collection_end_game.HighCap = "False";
                 data_collection_end_game.MidCap = "False";

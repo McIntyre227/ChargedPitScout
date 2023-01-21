@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.ToggleButton;
 
 public class data_collection_TeleOP extends AppCompatActivity {
 
@@ -22,6 +23,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String AutopitMiddle = "False";
     public static String AutopitBottom = "False";
 
+    public static String AutopitCommunityLocation1 = "False";
+    public static String AutopitCommunityLocation2 = "False";
+    public static String AutopitCommunityLocation3 = "False";
+    public static String AutopitCommunityLocation4 = "False";
     public static String AutopitColorReliance = "False";
 
     public static String AutopitCubes1 = "False";
@@ -48,6 +53,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final CheckBox AutopitMiddleCB = (CheckBox) findViewById(R.id.Autopit_Middle_CB);
         final CheckBox AutopitBottomCB = (CheckBox) findViewById(R.id.Autopit_Bottom_CB);
 
+        final Button AutopitCommunityLocation1B = (Button) findViewById(R.id.Autopit_CommunityLocation1_B);
+        final Button AutopitCommunityLocation2B = (Button) findViewById(R.id.Autopit_CommunityLocation2_B);
+        final Button AutopitCommunityLocation3B = (Button) findViewById(R.id.Autopit_CommunityLocation3_B);
+        final Button AutopitCommunityLocation4B = (Button) findViewById(R.id.Autopit_CommunityLocation4_B);
         final CheckBox AutopitColorRelianceCB = (CheckBox) findViewById(R.id.Autopit_ColorReliance_CB);
 
         final CheckBox AutopitCubes1CB = (CheckBox) findViewById(R.id.Autopit_Cubes1_CB);
@@ -92,9 +101,36 @@ public class data_collection_TeleOP extends AppCompatActivity {
                     AutopitBottom = "True";
                 }
 
+                if(AutopitCommunityLocation1B.is)
                 if(AutopitColorRelianceCB.isChecked()){
                     AutopitColorReliance = "True";
                 }
+
+                if(AutopitCubes1CB.isChecked()){
+                    AutopitCubes1 = "True";
+                }
+
+                if(AutopitCubes2CB.isChecked()){
+                    AutopitCubes2 = "True";
+                }
+
+                if(AutopitCubes3CB.isChecked()){
+                    AutopitCubes3 = "True";
+                }
+
+                if(AutopitCones1CB.isChecked()){
+                    AutopitCones1 = "True";
+                }
+
+                if(AutopitCones2CB.isChecked()) {
+                    AutopitCones2 = "True";
+                }
+
+                if(AutopitCones3CB.isChecked()){
+                    AutopitCones3 = "True";
+                }
+
+
 
 
                     Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);

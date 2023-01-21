@@ -50,14 +50,6 @@ public class Actual_Submit extends AppCompatActivity {
             data_Collection_sandstorm.GenpitRightSideUp + "," +
             data_Collection_sandstorm.GenpitCanDock + "," +
             data_Collection_sandstorm.GenpitCanEngage + "," +
-            data_collection_TeleOP.Terminal + "," +
-            data_collection_TeleOP.LaunchPad + "," +
-            data_collection_TeleOP.BackTarmac + "," +
-            data_collection_TeleOP.Fender + "," +
-            data_Collection_sandstorm.LoadCargoYes + "," +
-            data_Collection_sandstorm.LoadCargoNo + "," +
-            data_collection_TeleOP.DefenseYes + "," +
-            data_collection_TeleOP.DefenseNo + "," +
             data_collection_end_game.TraversalCap + "," +
             data_collection_end_game.HighCap + "," +
             data_collection_end_game.MidCap + "," +
