@@ -21,34 +21,43 @@ public class Start_Page extends AppCompatActivity {
 
 
             public void onClick(View v) {
-                Data_Collection_Page_1.Red1 = "False";
-                Data_Collection_Page_1.Red2 = "False";
-                Data_Collection_Page_1.Red3 = "False";
-                Data_Collection_Page_1.Red4 = "False";
-                Data_Collection_Page_1.Red5 = "False";
-                Data_Collection_Page_1.Red6 = "False";
-                //Data_Collection_Page_1.RedOther = "False";
-                Data_Collection_Page_1.Blue1 = "False";
-                Data_Collection_Page_1.Blue2 = "False";
-                Data_Collection_Page_1.Blue3 = "False";
-                Data_Collection_Page_1.Blue4 = "False";
-                Data_Collection_Page_1.Blue5 = "False";
-                Data_Collection_Page_1.Blue6 = "False";
-                //Data_Collection_Page_1.BlueOther = "False";
-                //data_Collection_sandstorm.HumanPlayerMultiple = "False";
+                Data_Collection_Page_1.GenTeamNum = 0;
+                        Data_Collection_Page_1.GenCubes = "False";
+                        Data_Collection_Page_1.GenCones = "False";
+                        Data_Collection_Page_1.GenSubstation = "False";
+                        Data_Collection_Page_1.GenGround = "False";
+                        Data_Collection_Page_1.GenSideways = "False";
+                        Data_Collection_Page_1.GenRightSideUp = "False";
+                        Data_Collection_Page_1.GenCanDock = "False";
+                        Data_Collection_Page_1.GenCanEngage = "False";
+                        data_Collection_sandstorm.AutoMobility = "False";
+                        data_Collection_sandstorm.AutoCones = "False";
+                        data_Collection_sandstorm.AutoTop = "False";
+                        data_Collection_sandstorm.AutoMiddle = "False";
+                        data_Collection_sandstorm.AutoBottom = "False";
+                        data_Collection_sandstorm.AutoCubes1 = "False";
+                        data_Collection_sandstorm.AutoCubes2 = "False";
+                        data_Collection_sandstorm.AutoCubes3 = "False";
+                        data_Collection_sandstorm.AutoCones1 = "False";
+                        data_Collection_sandstorm.AutoCones2 = "False";
+                        data_Collection_sandstorm.AutoCones3 = "False";
+                        data_Collection_sandstorm.AutoColorReliance = "False";
+                        data_collection_end_game.TopConesCB = "False";
+                        data_collection_end_game.MiddleConesCB = "False";
+                        data_collection_end_game.BottomConesCB = "False";
+                        data_collection_end_game.TopCubesCB = "False";
+                        data_collection_end_game.MiddleCubesCB = "False";
+                        data_collection_end_game.BottomCubesCB = "False";
+                        data_collection_end_game.DefenseCB = "False";
+                        data_collection_end_game.DockCB = "False";
+                        data_collection_end_game.EngageCB = "False";
+                        data_collection_end_game.ParkCB = "False";
+                        Save_Page.comment = "No Comment";
 
                 //data_Collection_sandstorm.BallCountAuto = 0;
                 //data_collection_TeleOP.WrongColorYes = "False";
                 //data_collection_TeleOP.WrongColorNo = "False";
-                data_collection_end_game.TraversalCap = "False";
-                data_collection_end_game.HighCap = "False";
-                data_collection_end_game.MidCap = "False";
-                data_collection_end_game.LowCap = "False";
-                data_collection_end_game.TraversalPref = "False";
-                data_collection_end_game.HighPref = "False";
-                data_collection_end_game.MidPref = "False";
-                data_collection_end_game.LowPref = "False";
-                data_collection_end_game.NoHang = "False";
+
                 Intent startintent = new Intent(getApplicationContext(), Data_Collection_Page_1.class);
                 startActivity(startintent);
             }

@@ -29,37 +29,38 @@ public class Actual_Submit extends AppCompatActivity {
    //final View txtDebug =(View)findViewById(R.id.TextViewDebug)
 
     //Compiles string for CSV file
-    public String Final_String = Data_Collection_Page_1.Team_Num + "," +
-            Data_Collection_Page_1.Red1 + "," +
-            Data_Collection_Page_1.Red2 + "," +
-            Data_Collection_Page_1.Red3 + "," +
-            Data_Collection_Page_1.Red4 + "," +
-            Data_Collection_Page_1.Red5 + "," +
-            Data_Collection_Page_1.Red6 + "," +
-            Data_Collection_Page_1.Blue1 + "," +
-            Data_Collection_Page_1.Blue2 + "," +
-            Data_Collection_Page_1.Blue3 + "," +
-            Data_Collection_Page_1.Blue4 + "," +
-            Data_Collection_Page_1.Blue5 + "," +
-            Data_Collection_Page_1.Blue6 + "," +
-            data_Collection_sandstorm.GenpitCubes + "," +
-            data_Collection_sandstorm.GenpitCones + "," +
-            data_Collection_sandstorm.GenpitSubstation + "," +
-            data_Collection_sandstorm.GenpitGround + "," +
-            data_Collection_sandstorm.GenpitSideways + "," +
-            data_Collection_sandstorm.GenpitRightSideUp + "," +
-            data_Collection_sandstorm.GenpitCanDock + "," +
-            data_Collection_sandstorm.GenpitCanEngage + "," +
-            data_collection_end_game.TraversalCap + "," +
-            data_collection_end_game.HighCap + "," +
-            data_collection_end_game.MidCap + "," +
-            data_collection_end_game.LowCap + "," +
-            data_collection_end_game.TraversalPref + "," +
-            data_collection_end_game.HighPref + "," +
-            data_collection_end_game.MidPref + "," +
-            data_collection_end_game.LowPref + "," +
-            data_collection_end_game.NoHang + "," +
-            data_collection_end_game.HangSpeed + "," +
+    public String Final_String = Data_Collection_Page_1.GenTeamNum + "," +
+            Data_Collection_Page_1.GenCubes + "," +
+            Data_Collection_Page_1.GenCones + "," +
+            Data_Collection_Page_1.GenSubstation + "," +
+            Data_Collection_Page_1.GenGround + "," +
+            Data_Collection_Page_1.GenSideways + "," +
+            Data_Collection_Page_1.GenRightSideUp + "," +
+            Data_Collection_Page_1.GenCanDock + "," +
+            Data_Collection_Page_1.GenCanEngage + "," +
+            data_Collection_sandstorm.AutoMobility + "," +
+            data_Collection_sandstorm.AutoCones + "," +
+            data_Collection_sandstorm.AutoCubes + "," +
+            data_Collection_sandstorm.AutoTop + "," +
+            data_Collection_sandstorm.AutoMiddle + "," +
+            data_Collection_sandstorm.AutoBottom + "," +
+            data_Collection_sandstorm.AutoCubes1 + "," +
+            data_Collection_sandstorm.AutoCubes2 + "," +
+            data_Collection_sandstorm.AutoCubes3 + "," +
+            data_Collection_sandstorm.AutoCones1 + "," +
+            data_Collection_sandstorm.AutoCones2 + "," +
+            data_Collection_sandstorm.AutoCones3 + "," +
+            data_Collection_sandstorm.AutoColorReliance + "," +
+            data_collection_end_game.TopConesCB + "," +
+            data_collection_end_game.MiddleConesCB + "," +
+            data_collection_end_game.BottomConesCB + "," +
+            data_collection_end_game.TopCubesCB + "," +
+            data_collection_end_game.MiddleCubesCB + "," +
+            data_collection_end_game.BottomCubesCB + "," +
+            data_collection_end_game.DefenseCB + "," +
+            data_collection_end_game.DockCB + "," +
+            data_collection_end_game.EngageCB + "," +
+            data_collection_end_game.ParkCB + "," +
             Save_Page.comment;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();
