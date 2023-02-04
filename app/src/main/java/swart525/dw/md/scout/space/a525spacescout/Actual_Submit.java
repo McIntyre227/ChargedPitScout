@@ -53,7 +53,7 @@ public class Actual_Submit extends AppCompatActivity {
             data_Collection_sandstorm.AutoColorReliance + "," +
             data_Collection_sandstorm.AutoDock + "," +
             data_Collection_sandstorm.AutoEngage + "," +
-            data_collection_end_game.TeleEndTopCones + "," +
+            /*data_collection_end_game.TeleEndTopCones + "," +
             data_collection_end_game.TeleEndMiddleCones + "," +
             data_collection_end_game.TeleEndBottomCones + "," +
             data_collection_end_game.TeleEndTopCubes + "," +
@@ -62,7 +62,7 @@ public class Actual_Submit extends AppCompatActivity {
             data_collection_end_game.TeleEndDefense + "," +
             data_collection_end_game.TeleEndDock + "," +
             data_collection_end_game.TeleEndEngage + "," +
-            data_collection_end_game.TeleEndPark + "," +
+            data_collection_end_game.TeleEndPark + "," + */
             Save_Page.comment;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();

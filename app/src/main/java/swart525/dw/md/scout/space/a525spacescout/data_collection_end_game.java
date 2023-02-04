@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 
-public class data_collection_end_game extends AppCompatActivity {
+/* public class data_collection_end_game extends AppCompatActivity {
 
     //Defines needed variables
     public static String TeleEndTopCubes = "False";
@@ -30,7 +30,7 @@ public class data_collection_end_game extends AppCompatActivity {
         //Defines Page Elements
 
 
-        final CheckBox TeleEndTopCubesCB = (CheckBox) findViewById(R.id.TeleEnd_TopCubes_CB);
+         final CheckBox TeleEndTopCubesCB = (CheckBox) findViewById(R.id.TeleEnd_TopCubes_CB);
         final CheckBox TeleEndMiddleCubesCB = (CheckBox) findViewById(R.id.TeleEnd_MiddleCubes_CB);
         final CheckBox TeleEndBottomCubesCB = (CheckBox) findViewById(R.id.TeleEnd_BottomCubes_CB);
         final CheckBox TeleEndDefenceCB = (CheckBox) findViewById(R.id.TeleEnd_Defence_CB);
@@ -95,3 +95,4 @@ public class data_collection_end_game extends AppCompatActivity {
 }
 
 
+*/
