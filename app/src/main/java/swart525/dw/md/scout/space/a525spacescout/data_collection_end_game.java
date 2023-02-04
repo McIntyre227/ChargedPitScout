@@ -10,16 +10,16 @@ import android.widget.CheckBox;
 public class data_collection_end_game extends AppCompatActivity {
 
     //Defines needed variables
-    public static String TopCubesCB = "False";
-    public static String MiddleCubesCB = "False";
-    public static String BottomCubesCB = "False";
-    public static String TopConesCB = "False";
-    public static String MiddleConesCB = "False";
-    public static String BottomConesCB = "False";
-    public static String DefenseCB = "False";
-    public static String DockCB = "False";
-    public static String EngageCB = "False";
-    public static String ParkCB = "False";
+    public static String TeleEndTopCubes = "False";
+    public static String TeleEndMiddleCubes = "False";
+    public static String TeleEndBottomCubes = "False";
+    public static String TeleEndTopCones = "False";
+    public static String TeleEndMiddleCones = "False";
+    public static String TeleEndBottomCones = "False";
+    public static String TeleEndDefense = "False";
+    public static String TeleEndDock = "False";
+    public static String TeleEndEngage = "False";
+    public static String TeleEndPark = "False";
 
 
     @Override
@@ -30,16 +30,16 @@ public class data_collection_end_game extends AppCompatActivity {
         //Defines Page Elements
 
 
-        final CheckBox TeleTopCubesCB = (CheckBox) findViewById(R.id.Tele_TopCubes_CB);
-        final CheckBox TeleMiddleCubesCB = (CheckBox) findViewById(R.id.Tele_MiddleCubes_CB);
-        final CheckBox TeleBottomCubesCB = (CheckBox) findViewById(R.id.Tele_BottomCubes_CB);
-        final CheckBox TeleDefenceCB = (CheckBox) findViewById(R.id.Tele_Defence_CB);
-        final CheckBox TeleTopConesCB = (CheckBox) findViewById(R.id.Tele_TopCones_CB);
-        final CheckBox TeleMiddleConesCB = (CheckBox) findViewById(R.id.Tele_MiddleCones_CB);
-        final CheckBox TeleBottomConesCB = (CheckBox) findViewById(R.id.Tele_BottomCones_CB);
-        final CheckBox EndDockCB = (CheckBox) findViewById(R.id.End_Dock_CB);
-        final CheckBox EndEngageCB = (CheckBox) findViewById(R.id.End_Engage_CB);
-        final CheckBox EndParkCB = (CheckBox) findViewById(R.id.End_Park_CB);
+        final CheckBox TeleEndTopCubesCB = (CheckBox) findViewById(R.id.TeleEnd_TopCubes_CB);
+        final CheckBox TeleEndMiddleCubesCB = (CheckBox) findViewById(R.id.TeleEnd_MiddleCubes_CB);
+        final CheckBox TeleEndBottomCubesCB = (CheckBox) findViewById(R.id.TeleEnd_BottomCubes_CB);
+        final CheckBox TeleEndDefenceCB = (CheckBox) findViewById(R.id.TeleEnd_Defence_CB);
+        final CheckBox TeleEndTopConesCB = (CheckBox) findViewById(R.id.TeleEnd_TopCones_CB);
+        final CheckBox TeleEndMiddleConesCB = (CheckBox) findViewById(R.id.TeleEnd_MiddleCones_CB);
+        final CheckBox TeleEndBottomConesCB = (CheckBox) findViewById(R.id.TeleEnd_BottomCones_CB);
+        final CheckBox TeleEndDockCB = (CheckBox) findViewById(R.id.TeleEnd_Dock_CB);
+        final CheckBox TeleEndEngageCB = (CheckBox) findViewById(R.id.TeleEnd_Engage_CB);
+        final CheckBox TeleEndParkCB = (CheckBox) findViewById(R.id.TeleEnd_Park_CB);
 
         Button To_Submission = (Button) findViewById(R.id.To_Submission_B); //Defines button for later use
         To_Submission.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
@@ -47,35 +47,35 @@ public class data_collection_end_game extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                if (TeleTopCubesCB.isChecked()) {
-                    TopCubesCB = "True";
+                if (TeleEndTopCubesCB.isChecked()) {
+                    TeleEndTopCubes = "True";
                 }
-                if (TeleMiddleCubesCB.isChecked()) {
-                    MiddleCubesCB = "True";
+                if (TeleEndMiddleCubesCB.isChecked()) {
+                    TeleEndMiddleCubes = "True";
                 }
-                if (TeleBottomCubesCB.isChecked()) {
-                    BottomCubesCB = "True";
+                if (TeleEndBottomCubesCB.isChecked()) {
+                    TeleEndBottomCubes = "True";
                 }
-                if (TeleDefenceCB.isChecked()) {
-                    DefenseCB = "True";
+                if (TeleEndDefenceCB.isChecked()) {
+                    TeleEndDefense = "True";
                 }
-                if (TeleTopConesCB.isChecked()) {
-                    TopConesCB = "True";
+                if (TeleEndTopConesCB.isChecked()) {
+                    TeleEndTopCones = "True";
                 }
-                if (TeleMiddleConesCB.isChecked()) {
-                    MiddleConesCB = "True";
+                if (TeleEndMiddleConesCB.isChecked()) {
+                    TeleEndMiddleCones = "True";
                 }
-                if (TeleBottomConesCB.isChecked()) {
-                    BottomConesCB = "True";
+                if (TeleEndBottomConesCB.isChecked()) {
+                    TeleEndBottomCones = "True";
                 }
-                if (EndDockCB.isChecked()) {
-                    DockCB = "True";
+                if (TeleEndDockCB.isChecked()) {
+                    TeleEndDock = "True";
                 }
-                if (EndEngageCB.isChecked()) {
-                    EngageCB = "True";
+                if (TeleEndEngageCB.isChecked()) {
+                    TeleEndEngage = "True";
                 }
-                if (EndParkCB.isChecked()) {
-                    ParkCB = "True";
+                if (TeleEndParkCB.isChecked()) {
+                    TeleEndPark = "True";
                 }
 
                 //Ending position variables

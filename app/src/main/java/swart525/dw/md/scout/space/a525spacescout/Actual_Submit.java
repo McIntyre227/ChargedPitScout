@@ -26,7 +26,7 @@ public class Actual_Submit extends AppCompatActivity {
     public String filePath = "/ScoutData/";
 
     //This is debugging
-   //final View txtDebug =(View)findViewById(R.id.TextViewDebug)
+    //final View txtDebug =(View)findViewById(R.id.TextViewDebug)
 
     //Compiles string for CSV file
     public String Final_String = Data_Collection_Page_1.GenTeamNum + "," +
@@ -39,28 +39,30 @@ public class Actual_Submit extends AppCompatActivity {
             Data_Collection_Page_1.GenCanDock + "," +
             Data_Collection_Page_1.GenCanEngage + "," +
             data_Collection_sandstorm.AutoMobility + "," +
-            data_Collection_sandstorm.AutoCones + "," +
-            data_Collection_sandstorm.AutoCubes + "," +
             data_Collection_sandstorm.AutoTop + "," +
             data_Collection_sandstorm.AutoMiddle + "," +
             data_Collection_sandstorm.AutoBottom + "," +
+            data_Collection_sandstorm.AutoCubes0 + "," +
             data_Collection_sandstorm.AutoCubes1 + "," +
             data_Collection_sandstorm.AutoCubes2 + "," +
             data_Collection_sandstorm.AutoCubes3 + "," +
+            data_Collection_sandstorm.AutoCones0 + "," +
             data_Collection_sandstorm.AutoCones1 + "," +
             data_Collection_sandstorm.AutoCones2 + "," +
             data_Collection_sandstorm.AutoCones3 + "," +
             data_Collection_sandstorm.AutoColorReliance + "," +
-            data_collection_end_game.TopConesCB + "," +
-            data_collection_end_game.MiddleConesCB + "," +
-            data_collection_end_game.BottomConesCB + "," +
-            data_collection_end_game.TopCubesCB + "," +
-            data_collection_end_game.MiddleCubesCB + "," +
-            data_collection_end_game.BottomCubesCB + "," +
-            data_collection_end_game.DefenseCB + "," +
-            data_collection_end_game.DockCB + "," +
-            data_collection_end_game.EngageCB + "," +
-            data_collection_end_game.ParkCB + "," +
+            data_Collection_sandstorm.AutoDock + "," +
+            data_Collection_sandstorm.AutoEngage + "," +
+            data_collection_end_game.TeleEndTopCones + "," +
+            data_collection_end_game.TeleEndMiddleCones + "," +
+            data_collection_end_game.TeleEndBottomCones + "," +
+            data_collection_end_game.TeleEndTopCubes + "," +
+            data_collection_end_game.TeleEndMiddleCubes + "," +
+            data_collection_end_game.TeleEndBottomCubes + "," +
+            data_collection_end_game.TeleEndDefense + "," +
+            data_collection_end_game.TeleEndDock + "," +
+            data_collection_end_game.TeleEndEngage + "," +
+            data_collection_end_game.TeleEndPark + "," +
             Save_Page.comment;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();

@@ -8,8 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
-
-
+import android.widget.ToggleButton;
 
 
 public class Data_Collection_Page_1 extends AppCompatActivity {
@@ -24,7 +23,16 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
     public static String GenRightSideUp = "False";
     public static String GenCanDock = "False";
     public static String GenCanEngage = "False";
-    //   public static String BlueOther = "False";
+
+    //public static ToggleButton GenBlueZone1TB;
+    //public static ToggleButton GenBlueZone2TB;
+    //public static ToggleButton GenBlueZone3TB;
+    //public static ToggleButton GenBlueZone4TB;
+    //public static ToggleButton GenRedZone1TB;
+    //public static ToggleButton GenRedZone2TB;
+    //public static ToggleButton GenRedZone3TB;
+    //public static ToggleButton GenRedZone4TB;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +41,6 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
         //Sets up comparison numbers
         final int CompareTeamNum = 1; //Team must be greater than 1
-
 
         //final EditText Match_Num_txt = (EditText) findViewById(R.id.Match_Num_Txt);
         final EditText GenTeamNumTXT = (EditText) findViewById(R.id.Gen_TeamNum_TXT);
@@ -48,11 +55,18 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         final CheckBox GenSidewaysCB = (CheckBox) findViewById(R.id.Gen_Sideways_CB);
         final CheckBox GenRightSideUpCB = (CheckBox) findViewById(R.id.Gen_RightSideUp_CB);
 
-        final CheckBox GenCanDockCB = (CheckBox) findViewById(R.id.Gen_CanDock_CB);
-        final CheckBox GenCanEngageCB = (CheckBox) findViewById(R.id.Gen_CanEngage_CB);
+        //final CheckBox GenCanDockCB = (CheckBox) findViewById(R.id.Gen_CanDock_CB);
+        //final CheckBox GenCanEngageCB = ((CheckBox) findViewById(R.id.Gen_CanEngage_CB);
 
-        //Defines all RadioButtons for positions
-
+        //Defines all buttons for locations
+        final ToggleButton GenBlueZone1TB = (ToggleButton) findViewById(R.id.Gen_BlueZone1_TB);
+        final ToggleButton GenBlueZone2TB = (ToggleButton) findViewById(R.id.Gen_BlueZone2_TB);
+        final ToggleButton GenBlueZone3TB = (ToggleButton) findViewById(R.id.Gen_BlueZone3_TB);
+        final ToggleButton GenBlueZone4TB = (ToggleButton) findViewById(R.id.Gen_BlueZone4_TB);
+        final ToggleButton GenRedZone1TB = (ToggleButton) findViewById(R.id.Gen_RedZone1_TB);
+        final ToggleButton GenRedZone2TB = (ToggleButton) findViewById(R.id.Gen_RedZone2_TB);
+        final ToggleButton GenRedZone3TB = (ToggleButton) findViewById(R.id.Gen_RedZone3_TB);
+        final ToggleButton GenRedZone4TB = (ToggleButton) findViewById(R.id.Gen_RedZone4_TB);
       //  final Button RedOtherCB = (Button) findViewById(R.id.Red_Other_B);
 
       //  final Button BlueOtherCB = (Button) findViewById(R.id.Blue_Other_CB);
@@ -61,21 +75,6 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
         //Button Red1CB = findViewById(R.id.Red1_B);
         //Toggle the colors of the button when it is touched
-        //Red1CB.setOnClickListener(new View.OnClickListener() {
-            //@Override
-           //public void onClick(View v) {
-                //Toast.makeText(Data_Collection_Page_1.this, "Left Button Press!", Toast.LENGTH_LONG).show();
-                //if(flgRed1) {
-                    //Red1CB.setBackgroundResource(R.color.button_yes_red);
-                    //flgRed1 = false;
-                    //Red1 = "True";
-                //}else{
-                    //Red1CB.setBackgroundResource(R.color.button_no);
-                    //flgRed1 = true;
-                    //Red1 = "False";
-                //}
-            //}
-        //});
 
 
         //Defines button needed and actions to cancel a data collection
@@ -125,13 +124,124 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenRightSideUpCB.isChecked()) {
                     GenRightSideUp = "True";
                 }
-                if (GenCanDockCB.isChecked()) {
-                    GenCanDock = "True";
+                //if (GenCanDockCB.isChecked()) {
+                //    GenCanDock = "True";
+                //}
+                //if (GenCanEngageCB.isChecked()) {
+                //    GenCanEngage = "True";
+                //}
+            }
+        });
+        GenBlueZone1TB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (GenBlueZone1TB.isChecked()) {
+                    GenBlueZone1TB.setBackgroundResource(R.color.button_yes_blue);
+                    GenBlueZone1TB.setText("On");
                 }
-                if (GenCanEngageCB.isChecked()) {
-                    GenCanEngage = "True";
+                else {
+                    GenBlueZone1TB.setBackgroundResource(R.color.button_no);
+                    GenBlueZone1TB.setText("Off");
                 }
             }
         });
-    }
-}
+
+        GenBlueZone2TB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (GenBlueZone2TB.isChecked()) {
+                    GenBlueZone2TB.setBackgroundResource(R.color.button_yes_blue);
+                    GenBlueZone2TB.setText("On");
+                }
+                else {
+                    GenBlueZone2TB.setBackgroundResource(R.color.button_no);
+                    GenBlueZone2TB.setText("Off");
+                }
+            }
+        });
+
+        GenBlueZone3TB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (GenBlueZone3TB.isChecked()) {
+                    GenBlueZone3TB.setBackgroundResource(R.color.button_yes_blue);
+                    GenBlueZone3TB.setText("On");
+                }
+                else {
+                    GenBlueZone3TB.setBackgroundResource(R.color.button_no);
+                    GenBlueZone3TB.setText("Off");
+                }
+            }
+        });
+
+        GenBlueZone4TB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (GenBlueZone4TB.isChecked()) {
+                    GenBlueZone4TB.setBackgroundResource(R.color.button_yes_blue);
+                    GenBlueZone4TB.setText("On");
+                }
+                else {
+                    GenBlueZone4TB.setBackgroundResource(R.color.button_no);
+                    GenBlueZone4TB.setText("Off");
+                }
+            }
+        });
+
+        GenRedZone1TB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (GenRedZone1TB.isChecked()) {
+                    GenRedZone1TB.setBackgroundResource(R.color.button_yes_red);
+                    GenRedZone1TB.setText("On");
+                }
+                else {
+                    GenRedZone1TB.setBackgroundResource(R.color.button_no);
+                    GenRedZone1TB.setText("Off");
+                }
+            }
+        });
+
+        GenRedZone2TB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (GenRedZone2TB.isChecked()) {
+                    GenRedZone2TB.setBackgroundResource(R.color.button_yes_red);
+                    GenRedZone2TB.setText("On");
+                }
+                else {
+                    GenRedZone2TB.setBackgroundResource(R.color.button_no);
+                    GenRedZone2TB.setText("Off");
+                }
+            }
+        });
+
+        GenRedZone3TB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (GenRedZone3TB.isChecked()) {
+                    GenRedZone3TB.setBackgroundResource(R.color.button_yes_red);
+                    GenRedZone3TB.setText("On");
+                }
+                else {
+                    GenRedZone3TB.setBackgroundResource(R.color.button_no);
+                    GenRedZone3TB.setText("Off");
+                }
+            }
+        });
+
+        GenRedZone4TB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (GenRedZone4TB.isChecked()) {
+                    GenRedZone4TB.setBackgroundResource(R.color.button_yes_red);
+                    GenRedZone4TB.setText("On");
+                }
+                else {
+                    GenRedZone4TB.setBackgroundResource(R.color.button_no);
+                    GenRedZone4TB.setText("Off");
+                }
+            }
+        });
+
+}}
