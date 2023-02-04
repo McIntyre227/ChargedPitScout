@@ -26,48 +26,43 @@ public class Actual_Submit extends AppCompatActivity {
     public String filePath = "/ScoutData/";
 
     //This is debugging
-   //final View txtDebug =(View)findViewById(R.id.TextViewDebug)
+    //final View txtDebug =(View)findViewById(R.id.TextViewDebug)
 
     //Compiles string for CSV file
-    public String Final_String = Data_Collection_Page_1.Team_Num + "," +
-            Data_Collection_Page_1.Red1 + "," +
-            Data_Collection_Page_1.Red2 + "," +
-            Data_Collection_Page_1.Red3 + "," +
-            Data_Collection_Page_1.Red4 + "," +
-            Data_Collection_Page_1.Red5 + "," +
-            Data_Collection_Page_1.Red6 + "," +
-            Data_Collection_Page_1.Blue1 + "," +
-            Data_Collection_Page_1.Blue2 + "," +
-            Data_Collection_Page_1.Blue3 + "," +
-            Data_Collection_Page_1.Blue4 + "," +
-            Data_Collection_Page_1.Blue5 + "," +
-            Data_Collection_Page_1.Blue6 + "," +
-            data_Collection_sandstorm.GenpitCubes + "," +
-            data_Collection_sandstorm.GenpitCones + "," +
-            data_Collection_sandstorm.GenpitSubstation + "," +
-            data_Collection_sandstorm.GenpitGround + "," +
-            data_Collection_sandstorm.GenpitSideways + "," +
-            data_Collection_sandstorm.GenpitRightSideUp + "," +
-            data_Collection_sandstorm.GenpitCanDock + "," +
-            data_Collection_sandstorm.GenpitCanEngage + "," +
-            data_collection_TeleOP.Terminal + "," +
-            data_collection_TeleOP.LaunchPad + "," +
-            data_collection_TeleOP.BackTarmac + "," +
-            data_collection_TeleOP.Fender + "," +
-            data_Collection_sandstorm.LoadCargoYes + "," +
-            data_Collection_sandstorm.LoadCargoNo + "," +
-            data_collection_TeleOP.DefenseYes + "," +
-            data_collection_TeleOP.DefenseNo + "," +
-            data_collection_end_game.TraversalCap + "," +
-            data_collection_end_game.HighCap + "," +
-            data_collection_end_game.MidCap + "," +
-            data_collection_end_game.LowCap + "," +
-            data_collection_end_game.TraversalPref + "," +
-            data_collection_end_game.HighPref + "," +
-            data_collection_end_game.MidPref + "," +
-            data_collection_end_game.LowPref + "," +
-            data_collection_end_game.NoHang + "," +
-            data_collection_end_game.HangSpeed + "," +
+    public String Final_String = Data_Collection_Page_1.GenTeamNum + "," +
+            Data_Collection_Page_1.GenCubes + "," +
+            Data_Collection_Page_1.GenCones + "," +
+            Data_Collection_Page_1.GenSubstation + "," +
+            Data_Collection_Page_1.GenGround + "," +
+            Data_Collection_Page_1.GenSideways + "," +
+            Data_Collection_Page_1.GenRightSideUp + "," +
+            Data_Collection_Page_1.GenCanDock + "," +
+            Data_Collection_Page_1.GenCanEngage + "," +
+            data_Collection_sandstorm.AutoMobility + "," +
+            data_Collection_sandstorm.AutoTop + "," +
+            data_Collection_sandstorm.AutoMiddle + "," +
+            data_Collection_sandstorm.AutoBottom + "," +
+            data_Collection_sandstorm.AutoCubes0 + "," +
+            data_Collection_sandstorm.AutoCubes1 + "," +
+            data_Collection_sandstorm.AutoCubes2 + "," +
+            data_Collection_sandstorm.AutoCubes3 + "," +
+            data_Collection_sandstorm.AutoCones0 + "," +
+            data_Collection_sandstorm.AutoCones1 + "," +
+            data_Collection_sandstorm.AutoCones2 + "," +
+            data_Collection_sandstorm.AutoCones3 + "," +
+            data_Collection_sandstorm.AutoColorReliance + "," +
+            data_Collection_sandstorm.AutoDock + "," +
+            data_Collection_sandstorm.AutoEngage + "," +
+            /*data_collection_end_game.TeleEndTopCones + "," +
+            data_collection_end_game.TeleEndMiddleCones + "," +
+            data_collection_end_game.TeleEndBottomCones + "," +
+            data_collection_end_game.TeleEndTopCubes + "," +
+            data_collection_end_game.TeleEndMiddleCubes + "," +
+            data_collection_end_game.TeleEndBottomCubes + "," +
+            data_collection_end_game.TeleEndDefense + "," +
+            data_collection_end_game.TeleEndDock + "," +
+            data_collection_end_game.TeleEndEngage + "," +
+            data_collection_end_game.TeleEndPark + "," + */
             Save_Page.comment;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();
