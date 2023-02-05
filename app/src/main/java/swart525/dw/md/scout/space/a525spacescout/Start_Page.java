@@ -28,8 +28,14 @@ public class Start_Page extends AppCompatActivity {
                         Data_Collection_Page_1.GenGround = "False";
                         Data_Collection_Page_1.GenSideways = "False";
                         Data_Collection_Page_1.GenRightSideUp = "False";
-                        Data_Collection_Page_1.GenCanDock = "False";
-                        Data_Collection_Page_1.GenCanEngage = "False";
+                        Data_Collection_Page_1.GenBlueZone1 = "False";
+                        Data_Collection_Page_1.GenBlueZone2 = "False";
+                        Data_Collection_Page_1.GenBlueZone3 = "False";
+                        Data_Collection_Page_1.GenBlueZone4 = "False";
+                        Data_Collection_Page_1.GenRedZone1 = "False";
+                        Data_Collection_Page_1.GenRedZone2 = "False";
+                        Data_Collection_Page_1.GenRedZone3 = "False";
+                        Data_Collection_Page_1.GenRedZone4 = "False";
                         data_Collection_sandstorm.AutoMobility = "False";
                         data_Collection_sandstorm.AutoTop = "False";
                         data_Collection_sandstorm.AutoMiddle = "False";

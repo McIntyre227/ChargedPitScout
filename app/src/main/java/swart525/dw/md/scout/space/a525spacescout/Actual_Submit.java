@@ -36,8 +36,14 @@ public class Actual_Submit extends AppCompatActivity {
             Data_Collection_Page_1.GenGround + "," +
             Data_Collection_Page_1.GenSideways + "," +
             Data_Collection_Page_1.GenRightSideUp + "," +
-            Data_Collection_Page_1.GenCanDock + "," +
-            Data_Collection_Page_1.GenCanEngage + "," +
+            Data_Collection_Page_1.GenBlueZone1 + "," +
+            Data_Collection_Page_1.GenBlueZone2 + "," +
+            Data_Collection_Page_1.GenBlueZone3 + "," +
+            Data_Collection_Page_1.GenBlueZone4 + "," +
+            Data_Collection_Page_1.GenRedZone1 + "," +
+            Data_Collection_Page_1.GenRedZone2 + "," +
+            Data_Collection_Page_1.GenRedZone3 + "," +
+            Data_Collection_Page_1.GenRedZone4 + "," +
             data_Collection_sandstorm.AutoMobility + "," +
             data_Collection_sandstorm.AutoTop + "," +
             data_Collection_sandstorm.AutoMiddle + "," +

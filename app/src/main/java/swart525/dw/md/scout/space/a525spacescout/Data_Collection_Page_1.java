@@ -21,18 +21,17 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
     public static String GenGround = "False";
     public static String GenSideways = "False";
     public static String GenRightSideUp = "False";
-    public static String GenCanDock = "False";
-    public static String GenCanEngage = "False";
+   // public static String GenCanDock = "False";
+  //  public static String GenCanEngage = "False";
 
-    //public static ToggleButton GenBlueZone1TB;
-    //public static ToggleButton GenBlueZone2TB;
-    //public static ToggleButton GenBlueZone3TB;
-    //public static ToggleButton GenBlueZone4TB;
-    //public static ToggleButton GenRedZone1TB;
-    //public static ToggleButton GenRedZone2TB;
-    //public static ToggleButton GenRedZone3TB;
-    //public static ToggleButton GenRedZone4TB;
-
+    public static String GenBlueZone1 = "False";
+    public static String GenBlueZone2 = "False";
+    public static String GenBlueZone3 = "False";
+    public static String GenBlueZone4 = "False";
+    public static String GenRedZone1 = "False";
+    public static String GenRedZone2 = "False";
+    public static String GenRedZone3 = "False";
+    public static String GenRedZone4 = "False";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,10 +137,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenBlueZone1TB.isChecked()) {
                     GenBlueZone1TB.setBackgroundResource(R.color.button_yes_blue);
                     GenBlueZone1TB.setText("On");
+                    GenBlueZone1 = "True";
                 }
                 else {
                     GenBlueZone1TB.setBackgroundResource(R.color.button_no);
                     GenBlueZone1TB.setText("Off");
+                    GenBlueZone1 = "False";
                 }
             }
         });
@@ -152,10 +153,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenBlueZone2TB.isChecked()) {
                     GenBlueZone2TB.setBackgroundResource(R.color.button_yes_blue);
                     GenBlueZone2TB.setText("On");
+                    GenBlueZone2 = "True";
                 }
                 else {
                     GenBlueZone2TB.setBackgroundResource(R.color.button_no);
                     GenBlueZone2TB.setText("Off");
+                    GenBlueZone2 = "False";
                 }
             }
         });
@@ -166,10 +169,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenBlueZone3TB.isChecked()) {
                     GenBlueZone3TB.setBackgroundResource(R.color.button_yes_blue);
                     GenBlueZone3TB.setText("On");
+                    GenBlueZone3 = "True";
                 }
                 else {
                     GenBlueZone3TB.setBackgroundResource(R.color.button_no);
                     GenBlueZone3TB.setText("Off");
+                    GenBlueZone3 = "False";
                 }
             }
         });
@@ -180,10 +185,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenBlueZone4TB.isChecked()) {
                     GenBlueZone4TB.setBackgroundResource(R.color.button_yes_blue);
                     GenBlueZone4TB.setText("On");
+                    GenBlueZone4 = "True";
                 }
                 else {
                     GenBlueZone4TB.setBackgroundResource(R.color.button_no);
                     GenBlueZone4TB.setText("Off");
+                    GenBlueZone4 = "False";
                 }
             }
         });
@@ -194,10 +201,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenRedZone1TB.isChecked()) {
                     GenRedZone1TB.setBackgroundResource(R.color.button_yes_red);
                     GenRedZone1TB.setText("On");
+                    GenRedZone1 = "True";
                 }
                 else {
                     GenRedZone1TB.setBackgroundResource(R.color.button_no);
                     GenRedZone1TB.setText("Off");
+                    GenRedZone1 = "False";
                 }
             }
         });
@@ -208,10 +217,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenRedZone2TB.isChecked()) {
                     GenRedZone2TB.setBackgroundResource(R.color.button_yes_red);
                     GenRedZone2TB.setText("On");
+                    GenRedZone2 = "True";
                 }
                 else {
                     GenRedZone2TB.setBackgroundResource(R.color.button_no);
                     GenRedZone2TB.setText("Off");
+                    GenRedZone2 = "False";
                 }
             }
         });
@@ -222,10 +233,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenRedZone3TB.isChecked()) {
                     GenRedZone3TB.setBackgroundResource(R.color.button_yes_red);
                     GenRedZone3TB.setText("On");
+                    GenRedZone3 = "True";
                 }
                 else {
                     GenRedZone3TB.setBackgroundResource(R.color.button_no);
                     GenRedZone3TB.setText("Off");
+                    GenRedZone3 = "False";
                 }
             }
         });
@@ -236,10 +249,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenRedZone4TB.isChecked()) {
                     GenRedZone4TB.setBackgroundResource(R.color.button_yes_red);
                     GenRedZone4TB.setText("On");
+                    GenRedZone4 = "True";
                 }
                 else {
                     GenRedZone4TB.setBackgroundResource(R.color.button_no);
                     GenRedZone4TB.setText("Off");
+                    GenRedZone4 = "False";
                 }
             }
         });
