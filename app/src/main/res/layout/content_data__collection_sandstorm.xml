@@ -29,54 +29,67 @@
     <CheckBox
         android:id="@+id/Auto_Dock_CB"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
         android:text="Dock"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.679"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656" />
-
-    <CheckBox
-        android:id="@+id/Auto_Top_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Top"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637" />
+        app:layout_constraintVertical_bias="0.647" />
 
     <CheckBox
         android:id="@+id/Auto_Engage_CB"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
         android:text="Engage"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintHorizontal_bias="0.724"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.691" />
+
+    <CheckBox
+        android:id="@+id/Auto_Middle_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:text="Middle"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <CheckBox
+        android:id="@+id/Auto_Top_CB"
+        android:layout_width="177dp"
+        android:layout_height="54dp"
+        android:text="Top"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
 
     <CheckBox
         android:id="@+id/Auto_Bottom_CB"
         android:layout_width="wrap_content"
-        android:layout_height="68dp"
+        android:layout_height="54dp"
         android:text="Bottom"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758" />
+        app:layout_constraintVertical_bias="0.734" />
 
     <TextView
         android:id="@+id/auto_Where_TV"
@@ -89,23 +102,10 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.566" />
-
-    <CheckBox
-        android:id="@+id/Auto_Middle_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="68dp"
-        android:text="Middle"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697" />
 
     <TextView
         android:id="@+id/Auto_Title_TV"
@@ -136,16 +136,16 @@
 
     <CheckBox
         android:id="@+id/Auto_ColorReliance_CB"
-        android:layout_width="753dp"
-        android:layout_height="105dp"
+        android:layout_width="651dp"
+        android:layout_height="93dp"
         android:text="Auto code relies on alliance color"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
+        app:layout_constraintVertical_bias="0.841" />
 
     <TextView
         android:id="@+id/Auto_AutoScore_TV"

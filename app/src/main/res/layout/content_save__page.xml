@@ -14,8 +14,10 @@
         android:layout_width="672dp"
         android:layout_height="347dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="388dp"
         android:layout_marginEnd="8dp"
+        android:background="#1D878787"
+        android:backgroundTint="#000000"
         android:ems="10"
         android:hint="@string/comment"
         android:importantForAutofill="no"
@@ -25,6 +27,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/To_Submission_B"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.958" />
@@ -41,6 +44,7 @@
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.236" />
@@ -57,6 +61,7 @@
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/Submit_To_Store_B"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,7 +76,7 @@
         android:textSize="90sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.792" />
