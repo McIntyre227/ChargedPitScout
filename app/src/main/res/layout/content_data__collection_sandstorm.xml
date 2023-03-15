@@ -8,7 +8,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".data_collection_autonomous"
     tools:showIn="@layout/activity_data__collection_sandstorm">
-
+//should the thing up there that says auto^ be sandstorm?
 
     <CheckBox
         android:id="@+id/Auto_Middle_CB"
@@ -22,19 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.159" />
-
-    <CheckBox
-        android:id="@+id/Tele_noEngage_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
-        android:text="No/park"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.685"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
 
     <TextView
         android:id="@+id/Auto_Title_TV"
@@ -269,7 +256,7 @@
         android:layout_width="744dp"
         android:layout_height="83dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Do you attempt to Engage (balance) on the Charge Station during Endgame"
+        android:text="Do you attempt to Engage (balance) on the Charge Station during Endgame?"
         android:textAlignment="textStart"
         android:textColor="#111"
         android:textSize="30sp"
@@ -301,7 +288,20 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.832" />
+
+    <CheckBox
+        android:id="@+id/Tele_noEngage_CB"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
+        android:text="No/park"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.832" />
@@ -346,7 +346,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_percent="0.47375"
+        app:layout_constraintGuide_percent="0.47"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
