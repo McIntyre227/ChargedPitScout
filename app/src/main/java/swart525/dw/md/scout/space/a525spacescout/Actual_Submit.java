@@ -30,35 +30,27 @@ public class Actual_Submit extends AppCompatActivity {
 
     //Compiles string for CSV file
     public String Final_String = Data_Collection_Page_1.GenTeamNum + "," +
-            Data_Collection_Page_1.GenCubes + "," +
-            Data_Collection_Page_1.GenCones + "," +
-            Data_Collection_Page_1.GenSubstation + "," +
-            Data_Collection_Page_1.GenGround + "," +
-            Data_Collection_Page_1.GenSideways + "," +
-            Data_Collection_Page_1.GenRightSideUp + "," +
-            Data_Collection_Page_1.GenBlueZone1 + "," +
-            Data_Collection_Page_1.GenBlueZone2 + "," +
-            Data_Collection_Page_1.GenBlueZone3 + "," +
-            Data_Collection_Page_1.GenBlueZone4 + "," +
-            Data_Collection_Page_1.GenRedZone1 + "," +
-            Data_Collection_Page_1.GenRedZone2 + "," +
-            Data_Collection_Page_1.GenRedZone3 + "," +
-            Data_Collection_Page_1.GenRedZone4 + "," +
-            data_Collection_sandstorm.AutoMobility + "," +
+            Data_Collection_Page_1.GenCanPlaceCubes + "," +
+            Data_Collection_Page_1.GenCanPlaceCones + "," +
+            Data_Collection_Page_1.GenPickupGround + "," +
+            Data_Collection_Page_1.GenPickupSubstation + "," +
             data_Collection_sandstorm.AutoTop + "," +
             data_Collection_sandstorm.AutoMiddle + "," +
             data_Collection_sandstorm.AutoBottom + "," +
-            data_Collection_sandstorm.AutoCubes0 + "," +
-            data_Collection_sandstorm.AutoCubes1 + "," +
-            data_Collection_sandstorm.AutoCubes2 + "," +
-            data_Collection_sandstorm.AutoCubes3 + "," +
-            data_Collection_sandstorm.AutoCones0 + "," +
-            data_Collection_sandstorm.AutoCones1 + "," +
-            data_Collection_sandstorm.AutoCones2 + "," +
-            data_Collection_sandstorm.AutoCones3 + "," +
-            data_Collection_sandstorm.AutoColorReliance + "," +
-            data_Collection_sandstorm.AutoDock + "," +
+            //left off here, column I thought about dumb idea
+            //data_Collection_sandstorm. + "," +
+            data_Collection_sandstorm.Auto1 + "," +
+            data_Collection_sandstorm.Auto2 + "," +
+            data_Collection_sandstorm.Auto3 + "," +
             data_Collection_sandstorm.AutoEngage + "," +
+            data_Collection_sandstorm.AutoAutoBalance + "," +
+            data_Collection_sandstorm.TeleScoreTop + "," +
+            data_Collection_sandstorm.TeleScoreMiddle + "," +
+            data_Collection_sandstorm.TeleScoreBottom + "," +
+            data_Collection_sandstorm.TelePark + "," +
+            data_Collection_sandstorm.AutoEngage + "," +
+            data_Collection_sandstorm.GenCycle + "," +
+
             data_collection_end_game.TeleEndTopCones + "," +
             data_collection_end_game.TeleEndMiddleCones + "," +
             data_collection_end_game.TeleEndBottomCones + "," +
@@ -69,6 +61,7 @@ public class Actual_Submit extends AppCompatActivity {
             data_collection_end_game.TeleEndDock + "," +
             data_collection_end_game.TeleEndEngage + "," +
             data_collection_end_game.TeleEndPark + "," +
+
             Save_Page.comment;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();

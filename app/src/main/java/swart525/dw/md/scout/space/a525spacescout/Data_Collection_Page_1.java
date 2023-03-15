@@ -15,25 +15,20 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
     //Defines Variables for Match/Team Number
     public static int GenTeamNum = 0;
-    public static String GenCubes = "False";
-    public static String GenCones = "False";
-    public static String GenSubstation = "False";
-    public static String GenGround = "False";
-    public static String GenSideways = "False";
-    public static String GenRightSideUp = "False";
-   // public static String GenCanDock = "False";
-  //  public static String GenCanEngage = "False";
+    public static String GenDimensions = "No Dimensions";
+    public static String GenDriveBase = "No Drive Base";
+    public static String GenCanPlaceCubes = "False";
+    public static String GenCanPlaceCones = "False";
+    public static String GenPickupSubstation = "False";
+    public static String GenPickupGround = "False";
 
-    public static String GenBlueZone1 = "False";
-    public static String GenBlueZone2 = "False";
-    public static String GenBlueZone3 = "False";
-    public static String GenBlueZone4 = "False";
-    public static String GenRedZone1 = "False";
-    public static String GenRedZone2 = "False";
-    public static String GenRedZone3 = "False";
-    public static String GenRedZone4 = "False";
+    public static String GenDefenseYes = "False";
+    public static String GenDefenseNo = "False";
+    public static String GenDefenseNeeded = "False";
+    public static String GenWheelLock = "False";
 
-    @Override
+
+    @Owverride
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data__collection__page_1);
@@ -41,31 +36,27 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         //Sets up comparison numbers
         final int CompareTeamNum = 1; //Team must be greater than 1
 
-        //final EditText Match_Num_txt = (EditText) findViewById(R.id.Match_Num_Txt);
+        final EditText GenRobotLengthSA = (EditText) findViewById(R.id.Gen_Robot_Length_SA);
+        final EditText GenDriveBaseSA = (EditText) findViewById(R.id.Gen_DriveBase__SA);
         final EditText GenTeamNumTXT = (EditText) findViewById(R.id.Gen_TeamNum_TXT);
-        //final EditText Initials_txt = (EditText) findViewById(R.id.Init_Txt);
+
 
         //Defines all Checkboxes
         final CheckBox GenCubesCB = (CheckBox) findViewById(R.id.Gen_Cubes_CB);
         final CheckBox GenConesCB = (CheckBox) findViewById(R.id.Gen_Cones_CB);
-
         final CheckBox GenSubstationCB = (CheckBox) findViewById(R.id.Gen_Substation_CB);
         final CheckBox GenGroundCB = (CheckBox) findViewById(R.id.Gen_Ground_CB);
-        final CheckBox GenSidewaysCB = (CheckBox) findViewById(R.id.Gen_Sideways_CB);
-        final CheckBox GenRightSideUpCB = (CheckBox) findViewById(R.id.Gen_RightSideUp_CB);
+        final CheckBox GenDefenseYesCB = (CheckBox) findViewById(R.id.Gen_DefenseYes_CB);
+        final CheckBox GenDefenseNoCB = (CheckBox) findViewById(R.id.Gen_DefenseNo_CB);
+        final CheckBox GenDefenseNeededCB = (CheckBox) findViewById(R.id.Gen_DefenseNeeded_CB);
+        final CheckBox GenWheelLockCB = (CheckBox) findViewById(R.id.Gen__WheelLock_CB);
+
 
         //final CheckBox GenCanDockCB = (CheckBox) findViewById(R.id.Gen_CanDock_CB);
         //final CheckBox GenCanEngageCB = ((CheckBox) findViewById(R.id.Gen_CanEngage_CB);
 
         //Defines all buttons for locations
-        final ToggleButton GenBlueZone1TB = (ToggleButton) findViewById(R.id.Gen_BlueZone1_TB);
-        final ToggleButton GenBlueZone2TB = (ToggleButton) findViewById(R.id.Gen_BlueZone2_TB);
-        final ToggleButton GenBlueZone3TB = (ToggleButton) findViewById(R.id.Gen_BlueZone3_TB);
-        final ToggleButton GenBlueZone4TB = (ToggleButton) findViewById(R.id.Gen_BlueZone4_TB);
-        final ToggleButton GenRedZone1TB = (ToggleButton) findViewById(R.id.Gen_RedZone1_TB);
-        final ToggleButton GenRedZone2TB = (ToggleButton) findViewById(R.id.Gen_RedZone2_TB);
-        final ToggleButton GenRedZone3TB = (ToggleButton) findViewById(R.id.Gen_RedZone3_TB);
-        final ToggleButton GenRedZone4TB = (ToggleButton) findViewById(R.id.Gen_RedZone4_TB);
+       // final ToggleButton GenBlueZone1TB = (ToggleButton) findViewById(R.id.Gen_BlueZone1_TB);
       //  final Button RedOtherCB = (Button) findViewById(R.id.Red_Other_B);
 
       //  final Button BlueOtherCB = (Button) findViewById(R.id.Blue_Other_CB);
@@ -90,21 +81,28 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         Start_Collection.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
             @Override
             public void onClick(View v) {
-                if(GenTeamNumTXT.getText().toString().isEmpty()) {
+                if (GenTeamNumTXT.getText().toString().isEmpty()) {
                     Toast.makeText(Data_Collection_Page_1.this, "Cannot Continue. Please Enter Team Number!", Toast.LENGTH_LONG).show();
-                }
-                else
-                {int Team_Num_Real = Integer.parseInt(GenTeamNumTXT.getText().toString());
-                        if(CompareTeamNum < Team_Num_Real) {
-                            GenTeamNum = Integer.parseInt(GenTeamNumTXT.getText().toString()); //Sets team num data to txt box information
+                } else {
+                    int Team_Num_Real = Integer.parseInt(GenTeamNumTXT.getText().toString());
+                    if (CompareTeamNum < Team_Num_Real) {
+                        GenTeamNum = Integer.parseInt(GenTeamNumTXT.getText().toString()); //Sets team num data to txt box information
 
-                            Intent startintent = new Intent(getApplicationContext(), data_Collection_sandstorm.class);
-                            startActivity(startintent);
-                            }
-                        else {
-                            Toast.makeText(Data_Collection_Page_1.this, "Did you make a mistake? Please make sure Team Number and Match Number aren't flipped.", Toast.LENGTH_LONG).show();
-                        }
+                        Intent startintent = new Intent(getApplicationContext(), data_Collection_sandstorm.class);
+                        startActivity(startintent);
+                    } else {
+                        Toast.makeText(Data_Collection_Page_1.this, "Did you make a mistake? Please make sure Team Number and Match Number aren't flipped.", Toast.LENGTH_LONG).show();
                     }
+                }
+                {
+                    Intent startintent = new Intent(getApplicationContext(), Actual_Submit.class);
+                    startActivity(startintent);
+                    GenDimensions = GenRobotLengthSA.getText().toString();
+
+                    startintent = new Intent(getApplicationContext(), Actual_Submit.class);
+                    startActivity(startintent);
+                    GenWheelLock = GenWheelLockCB.getText().toString();
+                }
                 if (GenCubesCB.isChecked()) {
                     GenCubes = "True";
                 }
@@ -117,31 +115,31 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
                 if (GenGroundCB.isChecked()) {
                     GenGround = "True";
                 }
-                if (GenSidewaysCB.isChecked()) {
-                    GenSideways = "True";
+                if (GenDefenseYesCB.isChecked()) {
+                    GenDefenseYes = "True";
                 }
-                if (GenRightSideUpCB.isChecked()) {
-                    GenRightSideUp = "True";
+                if (GenDefenseNoCB.isChecked()) {
+                    GenDefenseNo = "True";
                 }
-                //if (GenCanDockCB.isChecked()) {
-                //    GenCanDock = "True";
-                //}
-                //if (GenCanEngageCB.isChecked()) {
-                //    GenCanEngage = "True";
-                //}
+                if (GenDefenseNeededCB.isChecked()) {
+                    GenDefenseNeeded = "True";
+                }
+                if (GenWheelLockCB.isChecked()) {
+                    GenWheelLock = "True";
+                }
             }
-        });
-        GenBlueZone1TB.setOnClickListener(new View.OnClickListener() {
+            });
+      /*  GenBlueZone1TB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (GenBlueZone1TB.isChecked()) {
+               if (GenBlueZone1TB.isChecked()) {
                     GenBlueZone1TB.setBackgroundResource(R.color.button_yes_blue);
-                    GenBlueZone1TB.setText("On");
+                    GenBlueZone1TB.setText("YES");
                     GenBlueZone1 = "True";
                 }
                 else {
                     GenBlueZone1TB.setBackgroundResource(R.color.button_no);
-                    GenBlueZone1TB.setText("Off");
+                    GenBlueZone1TB.setText("NO");
                     GenBlueZone1 = "False";
                 }
             }
@@ -152,12 +150,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             public void onClick(View v) {
                 if (GenBlueZone2TB.isChecked()) {
                     GenBlueZone2TB.setBackgroundResource(R.color.button_yes_blue);
-                    GenBlueZone2TB.setText("On");
+                    GenBlueZone2TB.setText("YES");
                     GenBlueZone2 = "True";
                 }
                 else {
                     GenBlueZone2TB.setBackgroundResource(R.color.button_no);
-                    GenBlueZone2TB.setText("Off");
+                    GenBlueZone2TB.setText("NO");
                     GenBlueZone2 = "False";
                 }
             }
@@ -168,12 +166,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             public void onClick(View v) {
                 if (GenBlueZone3TB.isChecked()) {
                     GenBlueZone3TB.setBackgroundResource(R.color.button_yes_blue);
-                    GenBlueZone3TB.setText("On");
+                    GenBlueZone3TB.setText("YES");
                     GenBlueZone3 = "True";
                 }
                 else {
                     GenBlueZone3TB.setBackgroundResource(R.color.button_no);
-                    GenBlueZone3TB.setText("Off");
+                    GenBlueZone3TB.setText("NO");
                     GenBlueZone3 = "False";
                 }
             }
@@ -184,12 +182,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             public void onClick(View v) {
                 if (GenBlueZone4TB.isChecked()) {
                     GenBlueZone4TB.setBackgroundResource(R.color.button_yes_blue);
-                    GenBlueZone4TB.setText("On");
+                    GenBlueZone4TB.setText("YES");
                     GenBlueZone4 = "True";
                 }
                 else {
                     GenBlueZone4TB.setBackgroundResource(R.color.button_no);
-                    GenBlueZone4TB.setText("Off");
+                    GenBlueZone4TB.setText("NO");
                     GenBlueZone4 = "False";
                 }
             }
@@ -200,12 +198,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             public void onClick(View v) {
                 if (GenRedZone1TB.isChecked()) {
                     GenRedZone1TB.setBackgroundResource(R.color.button_yes_red);
-                    GenRedZone1TB.setText("On");
+                    GenRedZone1TB.setText("YES");
                     GenRedZone1 = "True";
                 }
                 else {
                     GenRedZone1TB.setBackgroundResource(R.color.button_no);
-                    GenRedZone1TB.setText("Off");
+                    GenRedZone1TB.setText("NO");
                     GenRedZone1 = "False";
                 }
             }
@@ -216,12 +214,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             public void onClick(View v) {
                 if (GenRedZone2TB.isChecked()) {
                     GenRedZone2TB.setBackgroundResource(R.color.button_yes_red);
-                    GenRedZone2TB.setText("On");
+                    GenRedZone2TB.setText("YES");
                     GenRedZone2 = "True";
                 }
                 else {
                     GenRedZone2TB.setBackgroundResource(R.color.button_no);
-                    GenRedZone2TB.setText("Off");
+                    GenRedZone2TB.setText("NO");
                     GenRedZone2 = "False";
                 }
             }
@@ -232,12 +230,12 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             public void onClick(View v) {
                 if (GenRedZone3TB.isChecked()) {
                     GenRedZone3TB.setBackgroundResource(R.color.button_yes_red);
-                    GenRedZone3TB.setText("On");
+                    GenRedZone3TB.setText("YES");
                     GenRedZone3 = "True";
                 }
                 else {
                     GenRedZone3TB.setBackgroundResource(R.color.button_no);
-                    GenRedZone3TB.setText("Off");
+                    GenRedZone3TB.setText("NO");
                     GenRedZone3 = "False";
                 }
             }
@@ -248,15 +246,16 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             public void onClick(View v) {
                 if (GenRedZone4TB.isChecked()) {
                     GenRedZone4TB.setBackgroundResource(R.color.button_yes_red);
-                    GenRedZone4TB.setText("On");
+                    GenRedZone4TB.setText("YES");
                     GenRedZone4 = "True";
                 }
                 else {
                     GenRedZone4TB.setBackgroundResource(R.color.button_no);
-                    GenRedZone4TB.setText("Off");
+                    GenRedZone4TB.setText("NO");
                     GenRedZone4 = "False";
                 }
+
             }
-        });
+        });*/
 
 }}
